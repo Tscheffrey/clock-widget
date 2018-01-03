@@ -1,0 +1,70 @@
+html{
+  font-size: 62.5%;
+  font-size: 100%;
+}
+body {
+  background: black;
+  color: white;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 100;
+  
+  text-align:  center;
+}
+
+* {
+  transition: all 500ms ease;
+}
+
+div.clock {
+  /*min-width: 30rem;*/
+/*  outline: 1px solid white;*/
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px solid red;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+div.clock > .hours, div.clock > .minutes{
+  vertical-align:  top;
+}
+
+div.clock > .hours{
+  display: inline-block;
+  font-size: 15rem;
+  /*background: red;*/
+  /*width: 16rem;
+  text-align: right;*/
+}
+
+div.clock > .minutes{
+  display: inline-block;
+  font-size: 10rem;
+  position: relative;
+  top: 1rem;
+  /*text-align: left;
+  width: 11rem;*/
+ /* background: blue;*/
+}
+
+div.clock > div.seconds{
+  height: 0.5rem;
+  width: 10%;
+  background: white;
+  position:absolute;
+  bottom:0;
+  transition: width 500ms ease;
+  /*-webkit-filter: blur(0.2rem);*/
+}
+
+div.clock > div.secondsBg{
+  height: 0.25rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  position:absolute;
+  bottom:0.1rem;
+  /*-webkit-filter: blur(0.2rem);*/
+}
